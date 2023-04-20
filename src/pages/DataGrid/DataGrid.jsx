@@ -4,8 +4,29 @@ import MaterialReactTable from "material-react-table";
 import { userData } from "../../data";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+import { getDatabase, ref, onValue } from "firebase/database";
+
 const DataGrid = () => {
-  const columns = useMemo(() => [
+  const db = getDatabase();
+  const dbRef = ref(db, "/users");
+  const [users, setUsers] = React.useState([]);
+
+  onValue(
+    dbRef,
+    (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+        const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+        // ...
+        console.log(childKey, childData);
+      });
+    },
+    {
+      onlyOnce: false,
+    }
+  );
+
+  const columns = [
     {
       accesorKey: "name.firstName",
       header: "First Name",
@@ -26,7 +47,7 @@ const DataGrid = () => {
       accesorKey: "state",
       header: "State",
     },
-  ]);
+  ];
   const theme = useMemo(() =>
     createTheme({
       palette: {
@@ -38,7 +59,9 @@ const DataGrid = () => {
     <>
       <div className='table-container'>
         <ThemeProvider theme={theme}>
-          <MaterialReactTable columns={columns} data={userData} />
+          {userData && columns && (
+            <MaterialReactTable columns={columns} data={userData} />
+          )}
         </ThemeProvider>
       </div>
     </>

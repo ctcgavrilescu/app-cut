@@ -4,6 +4,8 @@ import Layout from "./components/Layout/Layout";
 import Calendar from "./pages/Calendar/Calendar";
 import BoardPage from "./pages/Board/Board";
 import DataGrid from "./pages/DataGrid/DataGrid";
+import config from "./config";
+import { useEffect } from "react";
 
 const App = () => {
   return (
