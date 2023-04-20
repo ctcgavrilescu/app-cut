@@ -28,23 +28,23 @@ const DataGrid = () => {
 
   const columns = [
     {
-      accesorKey: "name.firstName",
+      accessorKey: "name.firstName",
       header: "First Name",
     },
     {
-      accesorKey: "name.lastName",
+      accessorKey: "name.lastName",
       header: "Last Name",
     },
     {
-      accesorKey: "address",
+      accessorKey: "address",
       header: "Address",
     },
     {
-      accesorKey: "city",
+      accessorKey: "city",
       header: "City",
     },
     {
-      accesorKey: "state",
+      accessorKey: "state",
       header: "State",
     },
   ];
@@ -59,9 +59,7 @@ const DataGrid = () => {
     <>
       <div className='table-container'>
         <ThemeProvider theme={theme}>
-          {userData && columns && (
-            <MaterialReactTable columns={columns} data={userData} />
-          )}
+          <MaterialReactTable columns={columns} data={userData} />
         </ThemeProvider>
       </div>
     </>
