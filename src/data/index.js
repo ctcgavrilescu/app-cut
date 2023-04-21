@@ -175,8 +175,7 @@ export const userData = [
       lastName: 'Doe',
     },
     address: '261 Erdman Ford',
-    city: 'East Daphne',
-    state: 'Kentucky',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -184,8 +183,7 @@ export const userData = [
       lastName: 'Doe',
     },
     address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -193,8 +191,7 @@ export const userData = [
       lastName: 'Doe',
     },
     address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -202,8 +199,7 @@ export const userData = [
       lastName: 'Vandy',
     },
     address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -211,16 +207,14 @@ export const userData = [
       lastName: 'Rolluffs',
     },
     address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
+    phone: '0768514443', 
   }, {
     name: {
       firstName: 'Jane',
       lastName: 'Doe',
     },
     address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -228,8 +222,7 @@ export const userData = [
       lastName: 'Doe',
     },
     address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -237,8 +230,7 @@ export const userData = [
       lastName: 'Vandy',
     },
     address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    phone: '0768514443', 
   },
   {
     name: {
@@ -246,7 +238,6 @@ export const userData = [
       lastName: 'Rolluffs',
     },
     address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
+    phone: '0768514443', 
   },
 ]

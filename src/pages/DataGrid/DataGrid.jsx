@@ -36,16 +36,12 @@ const DataGrid = () => {
       header: "Last Name",
     },
     {
+      accessorKey: "phone",
+      header: "Phone",
+    },
+    {
       accessorKey: "address",
       header: "Address",
-    },
-    {
-      accessorKey: "city",
-      header: "City",
-    },
-    {
-      accessorKey: "state",
-      header: "State",
     },
   ];
   const theme = useMemo(() =>
